@@ -25,7 +25,7 @@ int main(void) {
     double rho = 7.85e3;
     double g = 9.81;
 
-    elasticity_solve("data/mesh.txt", "data/UV.txt", E, nu, rho, g);
+    elasticity_solve("data/mesh.txt", "data/UV.txt", E, nu, rho, g / 2);
 }
 
  
