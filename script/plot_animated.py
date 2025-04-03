@@ -148,7 +148,7 @@ def animate_mesh_with_field(mesh, displacement, field, frames=60, interval=50, s
 
         # Keep consistent axes
         ax.set_xlim(xlim)
-        ax.set_ylim(ylim)
+        ax.set_ylim(-6, 10)
         ax.set_aspect('equal')
         ax.grid(alpha=0.2)
         ax.set_title(f'Displacement Scale: {factor:.2f}')
@@ -171,7 +171,6 @@ if __name__ == "__main__":
     print(mesh)
     uv = np.loadtxt("data/UV.txt", skiprows=1, delimiter=",")
     uv_norm = np.linalg.norm(uv, axis=1)
-    factor = 5e4
 
     # Create displacement field
     displacement = uv * factor
@@ -181,7 +180,7 @@ if __name__ == "__main__":
         mesh,
         displacement,
         uv_norm,
-        frames=60,
+        frames=60*2,
         interval=50,
         field_kwargs={'cmap': 'turbo'},
         mesh_kwargs={'lw': 0.2, 'c': 'k'},

@@ -80,5 +80,7 @@ double *femElasticitySolve(femProblem *theProblem) {
         }
     }
 
+//    femFullSystemPrint(theSystem);
+
     return femFullSystemEliminate(theSystem);
 }
