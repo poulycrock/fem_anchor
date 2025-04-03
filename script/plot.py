@@ -83,14 +83,13 @@ if __name__ == "__main__":
     print(mesh)
     uv = np.loadtxt("data/UV.txt", skiprows=1, delimiter=",")
     uv_norm = np.linalg.norm(uv, axis=1)
-    factor = 5e4
+    factor = 1
 
     cb = mesh.plotfield(uv_norm, uv*factor, cmap="turbo")
     plt.colorbar(cb)
     mesh.plot(uv*factor, lw=0.2, c="k")
-    # mesh.number(uv*factor)
     plt.gca().set_aspect("equal")
     plt.grid(alpha=0.2)
-    plt.savefig("plot2.png")
-    
+    plt.savefig("1000N.png")
+    plt.show()
 
