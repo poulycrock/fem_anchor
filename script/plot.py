@@ -88,8 +88,8 @@ if __name__ == "__main__":
     cb = mesh.plotfield(uv_norm, uv*factor, cmap="turbo")
     plt.colorbar(cb)
     mesh.plot(uv*factor, lw=0.2, c="k")
-    # mesh.number(uv*factor)
     plt.gca().set_aspect("equal")
     plt.grid(alpha=0.2)
+    plt.savefig("1000N.png")
     plt.show()
 

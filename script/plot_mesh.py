@@ -88,5 +88,6 @@ if __name__ == "__main__":
     # mesh.number(uv*factor)
     plt.gca().set_aspect("equal")
     plt.grid(alpha=0.2)
+    plt.savefig("Mesh.png")
     plt.show()
 
