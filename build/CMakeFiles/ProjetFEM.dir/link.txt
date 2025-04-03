@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/ProjetFEM.dir/src/main.c.o CMakeFiles/ProjetFEM.dir/src/homework.c.o CMakeFiles/ProjetFEM.dir/src/fem.c.o -o ProjetFEM  -lm 
